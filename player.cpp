@@ -1,10 +1,10 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 #include "player.hpp"
 
-Player::Player(String name_, String sName_, String thName_, int yOfBirth, int fRating)
+Player::Player(string name_, string sName_, string thName_, int yOfBirth, int fRating)
 {
   name = name_;
   secondName = sName_;
@@ -14,12 +14,12 @@ Player::Player(String name_, String sName_, String thName_, int yOfBirth, int fR
   points = 0;
   additionalPoints = 0;
 }
-Player::game(double res, player op)
+void Player::game(double res, Player op)
 {
-  opponents.pushFront(op);
-  points += double; 
+  opponents.push_front(op);
+  points += res; 
 }
-Player::printInfo()
+void Player::printInfo()
 {
-cout << name << " " << secondName << " " << points << endl;
+  cout << name << " " << secondName << " " << points << endl;
 }

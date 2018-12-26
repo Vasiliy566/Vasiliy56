@@ -5,7 +5,7 @@ class Player
     // Add national rating, national league, 
     //groups where want to get the prize
   private:
-    String 
+    string 
        name,
        secondName,  // second name
        thirdName;   // third name
@@ -13,9 +13,9 @@ class Player
     int fideRating;
   public:
     double points;                                // points that player get
-    double additionalOpints;                      // additional points that shoul use when two or more players have same points
+    double additionalPoints;                      // additional points that shoul use when two or more players have same points
     list<Player> opponents;                    //list of players that thi player played with
-    Player(String, String, String, int, int);
-    game (double result, player opponent);
-    printInfo();	
-}
+    Player(string, string, string, int, int);
+    void game (double, Player);
+    void printInfo();	
+};
