@@ -29,8 +29,8 @@ public class Main {
         System.out.println("****************************");
         for (int i = 0; i < all.size(); i++) {
             System.out.println(all.get(i).fullInf() + " with pts = " + all.get(i).points + " ");
-
         }
+
         System.out.println("****************************");
         System.out.println(" Point groups :");
 
